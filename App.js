@@ -1,13 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {TextField} from './src/js/component/TextField';
+import TextField from './src/js/component/TextField';
 
 export default class App extends React.Component {
   render() {
-    <View style={styles.container}>
-      <Text>test</Text>
-      <TextField></TextField>
-    </View>
+    return(
+      <View style={styles.container}>
+        <Text>test</Text>
+        <TextField></TextField>
+      </View>
+    );
   }
 }
 
