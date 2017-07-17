@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextInput} from 'react-native';
+import { TextInput } from 'react-native';
 
 export default class TextField extends React.Component {
   
@@ -18,5 +18,3 @@ export default class TextField extends React.Component {
     );
   }
 }
-
-// AppRegistry.registerComponent('todoApp', () => TextField);
