@@ -12,15 +12,9 @@ const App = () => (
   <Router>
     <Scene key="root">
       <Scene key="tabbar" tabs={true} tabBarStyle={{backgroundColor: '#fff'}}>
-        <Scene key="todo" title="TODO" icon={TabIcon}>
-          <Scene key="todolist" component={TodoList} title="TodoList" />
-        </Scene>
-        <Scene key="cal" title="CAL" icon={TabIcon}>
-          <Scene key="calender" component={Calender} title="Calender" />
-        </Scene>
-        <Scene key="text" title="TEXT" icon={TabIcon}>
-          <Scene key="textfield" component={TextField} title="TextField" />
-        </Scene>
+        <Scene key="todo" title="TODO" icon={TabIcon} component={TodoList} />
+        <Scene key="cal" title="CAL" icon={TabIcon} component={Calender} />
+        <Scene key="text" title="TEXT" icon={TabIcon} component={TextField} />
       </Scene>
     </Scene>
   </Router>
