@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import Routing from './Routing';
 
 export default class TodoList extends React.Component {
 
@@ -13,7 +12,6 @@ export default class TodoList extends React.Component {
     return(
       <View style={styles.container}>
         <Text>todoList</Text>
-        <Routing />
       </View>
     );
   }
