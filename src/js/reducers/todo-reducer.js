@@ -11,7 +11,6 @@ const initialState = {
 export default function todoReducer(state = initialState, action = {}){
   switch (action.type){
     case TEXT_UPDATE:
-      // 空のObnectにマージする
       return Object.assign({}, state, {
         text: action.text,
       })
