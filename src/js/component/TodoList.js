@@ -1,20 +1,30 @@
 import React from 'react';
 import { StyleSheet, Text, View, } from 'react-native';
-import { Actions } from 'react-native-router-flux';
+import Todo from './Todo';
 
-export default class TodoList extends React.Component {
+// export default class TodoList extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
+//   constructor(props) {
+//     super(props);
+//   }
 
-  render() {
-    return(
-      <View style={styles.container}>
-        <Text>todoList</Text>
-      </View>
-    );
-  }
+//   render() {
+//     return(
+//       <View style={styles.container}>
+//         <Text>todoList</Text>
+//       </View>
+//     );
+//   }
+// }
+
+const TodoList = ({ todos, }) => {
+  return(
+    <ul>
+      { todos.map( todo => {
+        <Todo key={todo.id} {...todo} />
+      })}
+    </ul>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -28,3 +38,5 @@ const styles = StyleSheet.create({
     color: 'rgb(95, 177, 237)',
   },
 });
+
+export default TodoList;
