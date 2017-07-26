@@ -2,25 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View, } from 'react-native';
 import Todo from './Todo';
 
-// export default class TodoList extends React.Component {
-
-//   constructor(props) {
-//     super(props);
-//   }
-
-//   render() {
-//     return(
-//       <View style={styles.container}>
-//         <Text>todoList</Text>
-//       </View>
-//     );
-//   }
-// }
-
 const TodoList = ({ todos, }) => {
   return(
     <ul>
-      { todos.map( todo => {
+      {todos.map(todo => {
         <Todo key={todo.id} {...todo} />
       })}
     </ul>
